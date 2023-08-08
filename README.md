@@ -1,2 +1,2 @@
-# Static-website-on-brown-bears
+# Static website on brown bears
 My first ever HTML/CSS project
