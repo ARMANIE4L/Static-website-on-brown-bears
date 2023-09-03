@@ -411,8 +411,8 @@ img:hover {
 }
 
 video {
- max-height: 200px;
- width: 250px;
+ max-height: auto;
+ max-width: 30%;
  flex-shrink: 3;
  border-radius: 16px;
  background-color: black;
