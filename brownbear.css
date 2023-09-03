@@ -4,11 +4,26 @@
     src: url(./Montserrat/static/);
 }
 
-body{
+html. body {
+    font-size: 20px;
+    overflow-x: hidden;
     color: rgb(39, 23, 3);
     justify-content: center;
-
+    width: 100%;
+    height: 100%;
 }
+
+a.wikipedia:active {
+color: rgb(0, 0, 0);
+}
+
+p.first-paragraph::first-letter {
+font-size: 2rem;
+font-weight: bolder;
+margin-left: 40px;
+text-indent: 0;
+}
+
 
 .top-heading {
     position: sticky;
@@ -24,8 +39,12 @@ body{
     height: 50px;
     width: 100px;
     margin: 4px 15px;
+    margin-left: 30px;
 }
 
+.main-logo:hover {
+    border-width: 0px;
+}
 .top-heading a {
     border: 5px solid white;
     background-color: white;
@@ -34,38 +53,72 @@ body{
     display: inline-block;
     width: 80px;
     font-family:'Segoe UI', Verdana;
-    font-size: 15px;
-    font-weight: 500;
+    font-size: 0.75rem;
+    font-weight: 1000px;
     margin-top: 20px;
     margin-right: 8px;
     text-decoration: none;
 } 
 
-a.login-text:hover {
+.login {
+    display: flex;
+}
+
+button.login-text:hover {
     opacity: 70%;
     color: rgb(163, 163, 163);
 }
 
-a.signup {
+button {
     border: 5px solid white;
     background-color: white;
     border-radius: 15px;
     text-align: center;
-    display: inline-block;
+    display: flex;
     width: 80px;
     font-family:'Segoe UI', Verdana;
-    font-size: 15px;
+    font-size: 0.75rem;
     font-weight: 500;
     align-items: center;
     margin-top: 20px;
-    text-decoration: none;
+    margin-right: 20px;
+    justify-content: space-between;
+    order: -1;
+    transition-property: all;
+    transition-duration: 800ms;
 } 
 
-a.signup:hover {
-    opacity: 70%;
-    color: rgb(163, 163, 163);
+button:hover {
+    border: rgba(182, 182, 182, 0.568);
+    background-color: rgba(196, 196, 196, 0.568);
 }
 
+.button-wrapper {
+    margin-bottom: 20px;
+    margin-right: 3px;
+}
+
+.button-wrapper-signup {
+    margin-bottom: 20px;
+    margin-left: 3px;
+    margin-right: 7px;
+}
+
+.button-wrapper p {
+    font-size: 0.75rem;
+    margin-right: 6px;
+    font-family: 'Segoe UI', Verdana;
+    padding-left: 7px;
+    flex-shrink: 9;
+    
+}
+
+.button-wrapper-signup p {
+    font-size: 0.70rem;
+    font-weight: 500px;
+    padding-left: 7px;
+    flex-shrink: 9;
+}
 
 .main-heading-container {
     margin-top: 10px;
@@ -78,7 +131,7 @@ a.signup:hover {
 #main-heading {
 color: rgb(247, 132, 56);
 font-family: 'Orbitron', sans-serif;;
-font-size: xx-large;
+font-size: 1.5rem;
 font-weight: 1000;
 margin-top: 5px;
 height: 40px;
@@ -88,7 +141,7 @@ padding: 8px;
 align-items:center;
 }
 
-p {
+.blog p {
     font-size: 22px;
     font-family: 'Segoe UI', Verdana;
 }
@@ -97,15 +150,16 @@ p {
     font-family: monsterrat;
 }
 
-h3 {
+.blog h3 {
     font-family: monsterrat;
     font-weight: 900;
-    font-size: x-large;
+    font-size: 1.4rem;
 }
 
-h4 {
+.blog .about-brown-bears {
     margin-top: 70px;
-    font-size: x-large;
+    margin-bottom: 7px;
+    font-size: 1.4rem;
     font-family: 'Oswald' , sans-serif;
 }
 
@@ -124,25 +178,26 @@ a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-width: 500px;
-    max-width: 2000px;
-    min-height: 500px;
+    min-width: 280px;
     
+    min-height: 400px;
+    max-height: 500px;
+    overflow: visible;
 }
 
-#banner .content h1 {
-    font-size: large;
+#banner .content {
+    font-size: 1rem;
     color: white;
-    font-family: cursive;
-    padding: 130px 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 50px 20px;
     border: 1px solid rgb(223, 219, 219);
     border-radius: 5px;
-    top: 50x;
-    min-width: 100px;
-    max-width: 500px;
-    min-height: 100;
-    max-height: 500;
-    margin: 0 auto;
+    min-width: 15%;
+    max-width: 40%;
+    min-height: 200px;
+    max-height: 300px;
+    margin: auto;
+    text-align: center;
 }
 
 
@@ -162,11 +217,13 @@ a:hover {
     text-decoration: none;
     color: white;
     background-color: rgb(199, 121, 20);
+    transition-property: all;
+    transition-duration: 800ms;
 }
 
 #post-comment input:hover {
-    opacity: 70%;
-    color: rgb(255, 255, 255);
+    border: rgba(182, 182, 182, 0.568);
+    background-color: rgba(196, 196, 196, 0.568);
 }
 
 .container {
@@ -188,7 +245,10 @@ a:hover {
     margin: 30px 15px;
     text-align: center;
     font-family: Verdana, sans-serif;
-    font-weight: bolder;
+    font-weight: bold;
+    font-size: 0.85rem;
+    transition-property: background-color;
+    transition-duration: 1s;
 }
 
 .like {
@@ -211,55 +271,132 @@ a:hover {
 
 
 #share a:hover {
-    opacity: 70%;
-    color: rgb(255, 255, 255);
+    border: rgba(145, 144, 144, 0.568);
+    background-color: rgba(109, 109, 109, 0.568);
+    transition-timing-function: ease-in-out;
 }
 
 .background-heading {
     position: sticky;
     top: 0px;
+    text-align: center;
     margin: auto;
     color: white;
     background-color: #b96c23;
-    display: inline-block;
+    width: 130px;
     padding: 10px;
+    
 }
 
+/*large devices**/
+@media (min-width:1200px) {
+    .background-heading {
+        width:100%;
+    }  
+      
+    p {
+        width: 100%;
+    }
+}
 
-#media-box {
+/* medium devices */
+@media  (min-width:992px) and (max-width:1199px) {
+    .background-heading {
+        width: 50%;
+    }
+    p {
+        width: 100%;
+    }
+}
+
+@media  (min-width:280px) {
+    .first-paragraph {
+        width: 100%;
+    }
+    
+}
+
+    #media-box {
     display: flex;
-    justify-content: center;
-    align-items: baseline;
-    width: 1500px;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
     flex-direction:row;
+    gap:3px ;
+    margin-bottom: 17px;
+    overflow:visible;
+    border-radius: 14px;
+    background-color: #b96c23;
 }
 
 
 .image-1 {
-    margin: 15px 20px;
-    align-items: center;
-    flex-shrink: 3;
-    min-width: 500px;
-    max-width: 800px;
+    flex-shrink: 2;
+    width: 33%;
     min-height: 500px;
+   border-top-left-radius:  10px;
+   border-bottom-left-radius:  10px;
 }
 
 .image-2 {
-    align-items: center;
-    margin: 15px 20px;
+
     flex-shrink: 3;
-    min-width: 500px;
-    max-width: 800px;
+    width: 33%;
     min-height: 500px;
+    
 }
 
 .image-3 {
-    align-items: center;
-    margin: 15px 20px;
+
     flex-shrink: 3;
-    min-width: 500px;
-    max-width: 800px;
+   width: 33%;
     min-height: 500px;
+    max-height: 500px;
+    border-top-right-radius:  10px;
+    border-bottom-right-radius:  10px;
+}
+
+.middle-image-container {
+background-image: url(./nidal-shbeeb-iT9Axx176qw-unsplash.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+border: solid 1px #b96c23;
+min-width: 280px;
+
+min-height: 400px;
+max-height: 500px;
+margin-bottom: 16px;
+overflow: hidden;
+}
+
+.middle-image-container .content {
+    text-align: center;
+    font-size: 1.1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding: 120px 20px;
+    border: white solid 3px;
+    color: white;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 50%;
+    max-width: 40%;
+}
+
+.middle-image {
+    width: 100%;
+    height: 90%;
+    flex-shrink:0; 
+}
+
+img {
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
 }
 
 img:hover {
@@ -267,11 +404,6 @@ img:hover {
     opacity: 0.7;
 }
 
-.closeup {
-    max-width: 1100px;
-    max-height: 700px;
-    
-}
 
 #video-box {
  display: flex;
@@ -279,9 +411,11 @@ img:hover {
 }
 
 video {
-height: 300px;
-width: 700px;
-    flex-shrink: 3;
+ height: 300px;
+ width: 700px;
+ flex-shrink: 3;
+ border-radius: 16px;
+ background-color: black;
 }
 
 a {
@@ -302,3 +436,17 @@ h5 {
 .media {
     margin-bottom: 28px;
 }
+
+
+.search {
+    height: 25px;
+    width: 130px;
+    border-radius: 10px;
+}
+
+a {
+    transition-property: all;
+    transition-duration: 600ms;
+}
+
+
