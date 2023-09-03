@@ -4,7 +4,7 @@
     src: url(./Montserrat/static/);
 }
 
-html. body {
+html, body {
     font-size: 20px;
     overflow-x: hidden;
     color: rgb(39, 23, 3);
@@ -412,11 +412,32 @@ img:hover {
 
 video {
  max-height: auto;
- max-width: 30%;
+ 
  flex-shrink: 3;
  border-radius: 16px;
  background-color: black;
 }
+
+/*large devices**/
+@media (min-width:1200px) {
+    video {
+        width:50%;
+    }  
+}
+
+/* medium devices */
+@media  (min-width:992px) and (max-width:1199px) {
+    video {
+        width: 50%;
+    }
+}
+
+/* small devices */
+@media  (min-width:280px) {
+    video {
+        width: 50%;
+    }
+}  
 
 a {
     color: #b96c23;
