@@ -93,15 +93,17 @@ button:hover {
     background-color: rgba(196, 196, 196, 0.568);
 }
 
-.button-wrapper {
+.button-wrapper p {
     margin-bottom: 20px;
     margin-right: 3px;
+    text-align: center;
 }
 
-.button-wrapper-signup {
+.button-wrapper-signup p {
     margin-bottom: 20px;
     margin-left: 3px;
     margin-right: 7px;
+    text-align: center;
 }
 
 .button-wrapper p {
@@ -323,7 +325,7 @@ a:hover {
     align-content: center;
     flex-wrap: nowrap;
     flex-direction:row;
-    gap:3px ;
+    gap:6px ;
     margin-bottom: 17px;
     overflow:visible;
     border-radius: 14px;
